@@ -1,0 +1,328 @@
+/* Additional styles for multi-page layout */
+
+/* Page Title Section */
+.page-title {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 100px 0 40px;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-title .underline {
+    background-color: white;
+}
+
+/* Featured Content Section */
+.featured-content {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.featured-card {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.featured-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.featured-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.featured-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    position: relative;
+}
+
+.featured-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed);
+}
+
+.featured-link:hover::after {
+    width: 100%;
+}
+
+/* Preview Section */
+.preview {
+    background-color: var(--background-color);
+    padding: 80px 0;
+}
+
+.preview-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.preview-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.preview-text p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.preview-images {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.preview-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    position: relative;
+}
+
+.preview-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.preview-image:hover img {
+    transform: scale(1.1);
+}
+
+.preview-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+}
+
+.preview-caption h4 {
+    margin-bottom: 5px;
+}
+
+/* Team Section */
+.team {
+    background-color: var(--light-color);
+    padding: 80px 0;
+}
+
+.team-content {
+    text-align: center;
+}
+
+.team-content > p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: transform var(--transition-speed);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Submission Section */
+.submission {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.submission-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.submission-content > p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.submission-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.step {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.submission-cta {
+    margin-top: 30px;
+}
+
+/* Reference Styles */
+.references-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.reference-category {
+    margin-bottom: 50px;
+}
+
+.reference-category h2 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.citation-guide {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.citation-guide h2 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.citation-example {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.citation-example h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Organelles Intro */
+.organelles-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments for multi-page */
+@media (max-width: 768px) {
+    .page-title {
+        padding: 80px 0 30px;
+    }
+    
+    .page-title h1 {
+        font-size: 2rem;
+    }
+    
+    .preview-content {
+        flex-direction: column;
+    }
+    
+    .step {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

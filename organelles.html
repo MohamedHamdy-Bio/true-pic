@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organelles - True Pic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>True<span>Pic</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="organelles.html" class="active">Organelles</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Explore Organelles</h1>
+            <div class="underline"></div>
+        </div>
+    </section>
+
+    <!-- Organelles Section -->
+    <section class="organelles">
+        <div class="container">
+            <div class="organelles-intro">
+                <p>Explore detailed information about cellular organelles with high-resolution microscopic images, scientific annotations, and verified references. Click on any organelle card to view more detailed information.</p>
+            </div>
+            <div class="organelles-grid">
+                <div class="organelle-card" data-organelle="golgi">
+                    <div class="organelle-image">
+                        <img src="images/golgi_apparatus_hela.jpeg" alt="Golgi Apparatus">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Golgi Apparatus</h3>
+                                <p>Click to explore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organelle-info">
+                        <h3>Golgi Apparatus</h3>
+                        <p>The cellular packaging system that modifies, sorts, and packages proteins for secretion or use within the cell.</p>
+                    </div>
+                </div>
+                <div class="organelle-card" data-organelle="mitochondria">
+                    <div class="organelle-image">
+                        <img src="images/mitochondrion_tem.jpeg" alt="Mitochondrion">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Mitochondria</h3>
+                                <p>Click to explore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organelle-info">
+                        <h3>Mitochondria</h3>
+                        <p>The powerhouse of the cell, responsible for producing energy through cellular respiration.</p>
+                    </div>
+                </div>
+                <div class="organelle-card coming-soon">
+                    <div class="organelle-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Nucleus</h3>
+                                <p>Coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organelle-info">
+                        <h3>Nucleus</h3>
+                        <p>The control center of the cell, containing genetic material and directing cellular activities.</p>
+                    </div>
+                </div>
+                <div class="organelle-card coming-soon">
+                    <div class="organelle-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Endoplasmic Reticulum</h3>
+                                <p>Coming soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organelle-info">
+                        <h3>Endoplasmic Reticulum</h3>
+                        <p>An extensive membrane network involved in protein synthesis, lipid metabolism, and calcium storage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Organelle Details -->
+    <div id="organelle-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div id="golgi-content" class="organelle-detail-content">
+                    <h2>Golgi Apparatus</h2>
+                    <div class="organelle-detail-image">
+                        <img src="images/golgi_apparatus_hela.jpeg" alt="Golgi Apparatus">
+                        <div class="image-caption">
+                            <p>COP-I beta1 (green) staining at the Golgi (GM130, a cis-Golgi marker) (red) in unstimulated HeLa cells. Helix Pomatia Lectin (HPL) (gray) staining is also shown.</p>
+                        </div>
+                    </div>
+                    <div class="organelle-description">
+                        <h3>Structure and Function</h3>
+                        <p>The Golgi apparatus, also known as the Golgi complex or Golgi body, is a membrane-bound organelle found in the cytoplasm of most eukaryotic cells. It consists of a series of flattened, stacked pouches called cisternae.</p>
+                        <p>The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, modifies them, and packages them into vesicles for transport to their final destinations, such as lysosomes, the plasma membrane, or for secretion outside the cell.</p>
+                        
+                        <h3>Key Components</h3>
+                        <ul>
+                            <li><strong>Cis face:</strong> The receiving side of the Golgi, facing the endoplasmic reticulum</li>
+                            <li><strong>Medial region:</strong> The middle processing compartments</li>
+                            <li><strong>Trans face:</strong> The shipping side of the Golgi, facing the plasma membrane</li>
+                            <li><strong>Transport vesicles:</strong> Small membrane-bound spheres that transport materials between organelles</li>
+                        </ul>
+                        
+                        <h3>Scientific Significance</h3>
+                        <p>The Golgi apparatus plays a crucial role in the processing and sorting of proteins and lipids. Dysfunction of the Golgi apparatus has been implicated in various diseases, including neurodegenerative disorders and certain types of cancer.</p>
+                    </div>
+                    <div class="scientific-reference">
+                        <h3>References</h3>
+                        <p>Image source: Cell Image Library (CIL:13564). J Cell Biol. 189: 843-858. 2010.</p>
+                    </div>
+                </div>
+                
+                <div id="mitochondria-content" class="organelle-detail-content">
+                    <h2>Mitochondria</h2>
+                    <div class="organelle-detail-image">
+                        <img src="images/mitochondrion_tem.jpeg" alt="Mitochondrion">
+                        <div class="image-caption">
+                            <p>Transmission electron microscopy (TEM) image of mitochondria showing the characteristic cristae structures within the inner membrane.</p>
+                        </div>
+                    </div>
+                    <div class="organelle-description">
+                        <h3>Structure and Function</h3>
+                        <p>Mitochondria are membrane-bound organelles found in most eukaryotic cells. Often referred to as the "powerhouse of the cell," mitochondria generate most of the cell's supply of adenosine triphosphate (ATP), the energy currency of cells.</p>
+                        <p>Mitochondria have a distinctive structure with two membranes: an outer membrane and an inner membrane. The inner membrane is highly folded, forming structures called cristae, which increase the surface area for ATP-generating chemical reactions.</p>
+                        
+                        <h3>Key Components</h3>
+                        <ul>
+                            <li><strong>Outer membrane:</strong> Permeable to small molecules and ions</li>
+                            <li><strong>Inner membrane:</strong> Contains proteins involved in electron transport and ATP synthesis</li>
+                            <li><strong>Cristae:</strong> Folds of the inner membrane that increase surface area</li>
+                            <li><strong>Matrix:</strong> The space within the inner membrane, containing enzymes, mitochondrial DNA, and ribosomes</li>
+                            <li><strong>Mitochondrial DNA (mtDNA):</strong> Circular DNA that encodes some mitochondrial proteins</li>
+                        </ul>
+                        
+                        <h3>Scientific Significance</h3>
+                        <p>Beyond energy production, mitochondria are involved in various cellular processes, including calcium signaling, cell differentiation, and apoptosis (programmed cell death). Mitochondrial dysfunction has been linked to numerous diseases, including neurodegenerative disorders, diabetes, and aging.</p>
+                    </div>
+                    <div class="scientific-reference">
+                        <h3>References</h3>
+                        <p>Image source: Cell Image Library (CIL:11406). Figures 226 and 227 from Chapter 7 (Mitochondria) of 'The Cell, 2nd Ed.' by Don W. Fawcett M.D.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>True<span>Pic</span></h2>
+                    <p>High-resolution scientific images of human organelles and tissues</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="organelles.html">Organelles</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> info@truepic.example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 True Pic. All rights reserved.</p>
+                <p>Educational platform for scientific visualization.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
